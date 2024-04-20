@@ -1,0 +1,13 @@
+﻿@page
+@model MyApp.Namespace.CountriesModel
+@{
+    ViewData["Title"] = "Countries";
+}
+
+<h1>Countries Information</h1>
+<ul class="country-list">
+    @foreach(var country in Model.Countries)
+    {
+        <li>@country</li>
+    }
+</ul>
